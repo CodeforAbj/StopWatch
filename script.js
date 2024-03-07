@@ -13,8 +13,10 @@ let clearRef = "";
 // ====================================================== //
 
 function startWatch() {
-  isRunning = true;
-  clearRef = setInterval(updateTimer, 10);
+  if (!isRunning) {
+    isRunning = true;
+    clearRef = setInterval(updateTimer, 10);
+  }
 }
 function updateTimer() {
   if (isRunning) {

@@ -100,8 +100,6 @@ button {
 .Card div {
   margin: 1vh;
   flex-shrink: 0;
-  justify-content: center;
-  align-items: center;
 }
 
 .timer {
