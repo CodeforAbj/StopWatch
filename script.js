@@ -34,9 +34,16 @@ function updateTimer() {
       }
     }
     // ------------- render timer ------------- //
-    timerDisplay.innerHTML = `${timerHour}:${timerMinutes}:${timerSeconds}:${
+    timerDisplay.innerHTML = `${timerHour
+      .toString()
+      .padStart(2, "0")}:${timerMinutes
+      .toString()
+      .padStart(2, "0")}:${timerSeconds.toString().padStart(2, "0")}:${(
       timerMS / 10
-    }`;
+    )
+      .toFixed(0)
+      .toString()
+      .padStart(2, "0")}`;
   }
 }
 function stopWatch() {
@@ -51,6 +58,7 @@ function resetWatch() {
   timerSeconds = 0;
   timerMinutes = 0;
   timerHour = 0;
-  timerDisplay.innerHTML = "00:00:00";
+  timerDisplay.innerHTML = "00:00:00:00";
   clearRef = "";
+  isRunning = false;
 }

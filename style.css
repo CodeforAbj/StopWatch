@@ -75,7 +75,7 @@ button {
 /* ====================================================== */
 
 .Card {
-  width: 50vw;
+  width: max-content;
   margin: 3.2vh 2vw 2vh;
   height: 40vh;
   background-color: rgba(50, 50, 50, 0.2);
@@ -99,11 +99,12 @@ button {
 }
 .Card div {
   margin: 1vh;
-  flex-shrink: 0;
+  /* flex-shrink: 0; */
 }
 
 .timer {
-  font-size: 48px;
+  font-family: monospace;
+  font-size: 42px;
 }
 
 /* ------------- redButton ------------ */
@@ -122,7 +123,6 @@ button {
   line-height: 12px;
   min-height: 30px;
   outline: 0;
-  margin-left: 1vw;
   text-align: center;
   text-rendering: geometricprecision;
   text-transform: none;
