@@ -20,8 +20,8 @@ ___
 ## Acknowledgements
 
  - [Readme Editor](https://readme.so/editor)
- - [Website Background Image]("https://www.freepik.com/free-vector/gradient-black-technology-background_21074660.htm#query=black%20future%20technology%20background&position=16&from_view=keyword&track=ais&uuid=a66456bb-55de-48c4-b14a-b2295653d6c4)
-## Authors
+ - [Website Background Image](https://www.freepik.com/free-vector/gradient-black-technology-background_21074660.htm#query=black%20future%20technology%20background&position=16&from_view=keyword&track=ais&uuid=a66456bb-55de-48c4-b14a-b2295653d6c4)
+## Author
 
 - Github [@CodeforAbj](https://www.github.com/@CodeforAbj)
 - Twitter/X [@CodeforAbj](https://twitter.com/codeforabj)
