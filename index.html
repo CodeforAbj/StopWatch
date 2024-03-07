@@ -8,17 +8,20 @@
   </head>
   <body>
     <header>
-      <h1 class="rowFlex">ChronoCunt</h1>
+      <h1 class="rowFlex">ChronoCount</h1>
     </header>
     <main>
       <!---------- User Interface Card ----------->
       <div class="Card" id="stopwatchContainer">
-        <div class="timer"></div>
-        <div class="controls"></div>
+        <div class="timer" id="timer">00:00:10:00</div>
+        <div class="controls">
+          <button onclick="startWatch()">Start</button>
+          <button class="redbutton" onclick="stopWatch()">Stop</button>
+          <button onclick="resetWatch()">Reset</button>
+        </div>
       </div>
-     
     </main>
-    
+
     <script src="script.js"></script>
   </body>
 </html>
