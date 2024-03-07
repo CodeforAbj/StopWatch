@@ -12,12 +12,14 @@ let clearRef = "";
 // ===================== main Logic ===================== //
 // ====================================================== //
 
+// --- function to start the stopwatch --- //
 function startWatch() {
   if (!isRunning) {
     isRunning = true;
-    clearRef = setInterval(updateTimer, 10);
+    clearRef = setInterval(updateTimer, 10); //  storing reference to stop later  //
   }
 }
+// --- function to update display timer -- //
 function updateTimer() {
   if (isRunning) {
     timerMS += 10;
@@ -46,10 +48,13 @@ function updateTimer() {
       .padStart(2, "0")}`;
   }
 }
+// - function to stop or pause the timer - //
 function stopWatch() {
   isRunning = false;
   clearInterval(clearRef);
 }
+
+//  function to reset the stopWatch to zero  //
 function resetWatch() {
   if (clearRef !== "") {
     clearInterval(clearRef);
